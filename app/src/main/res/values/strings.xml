@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">客户查询</string>
+    <string name="query_condition">公司/id/手机号</string>
+    <string name="query">查询</string>
+    <string name="clear">清空</string>
+
+    <string name="email">请 输 入 电 话 号 码</string>
+    <string name="company_name">请 输 入 公 司 名 称</string>
+    <string name="app_id">请 输 入 应 用 id</string>
+    
+    <string name="input_notes">*三个条件输入一个即可</string>
+
+    <string name="no_data">查无数据</string>
+
+    <string name="version">版本 1.0</string>
+
+    <string name="username">用 户 名</string>
+    <string name="password">密 码</string>
+    <string name="login">登 录</string>
+
+    <string name="exit">退出登录</string>
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/pb_company_list"
+        style="@style/Base.TextAppearance.AppCompat.Inverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.zhuge.customerQuery.view.activity.MainActivity">
+
+
+        <!--<LinearLayout
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_marginLeft="30dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/bg_input"
+                android:id="@+id/et_query_condition"
+                android:hint="@string/query_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/bt_search"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/bg_input"
+                android:text="@string/query"
+                android:layout_width="60dp"
+                android:layout_height="35dp" />
+        </LinearLayout>-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_company_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <!--<android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>-->
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/tv_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="@string/no_data"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</RelativeLayout>
